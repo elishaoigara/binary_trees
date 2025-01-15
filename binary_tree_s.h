@@ -14,7 +14,7 @@ typedef struct binary_tree_s {
 
 /* Function prototypes */
 avl_t *avl_insert(avl_t **tree, int value);
-size_t height(const avl_t *node);
+size_t height(const avl_t *node);  /* Declare height function here */
 int balance_factor(avl_t *node);
 avl_t *binary_tree_rotate_left(avl_t *tree);
 avl_t *binary_tree_rotate_right(avl_t *tree);
