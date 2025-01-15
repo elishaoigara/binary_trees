@@ -16,17 +16,10 @@ int main(void)
     root->right = binary_tree_node(root, 402);
     binary_tree_insert_right(root->left, 54);
     binary_tree_insert_right(root, 128);
-    
-    printf("Tree before deletion:\n");
     binary_tree_print(root);
-    printf("\n");
 
-    // Deleting the tree
-    printf("Deleting the tree...\n");
+    // Delete the tree
     binary_tree_delete(root);
-
-    // After deletion, root is now NULL, do not print it
-    printf("Tree after deletion (root should be NULL now)\n");
 
     return (0);
 }

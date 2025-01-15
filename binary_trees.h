@@ -90,3 +90,14 @@ int btih_helper(const binary_tree_t *tree);
 void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
 
 #endif
+#ifndef BINARY_TREES_H
+#define BINARY_TREES_H
+
+#include <stddef.h>
+
+/* ... other declarations ... */
+
+void binary_tree_delete(binary_tree_t **tree);  /* Update this line */
+
+#endif /* BINARY_TREES_H */
+
