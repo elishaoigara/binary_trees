@@ -1,6 +1,19 @@
 #include "binary_trees.h"
 
 /**
+ * bst_minimum - Finds the minimum node in a Binary Search Tree
+ * @node: A pointer to the root node of the BST
+ * 
+ * Return: A pointer to the minimum node
+ */
+bst_t *bst_minimum(bst_t *node)
+{
+    while (node && node->left)
+        node = node->left;
+    return (node);
+}
+
+/**
  * bst_remove - Removes a node from a Binary Search Tree
  * @root: A pointer to the root node of the tree
  * @value: The value to remove
