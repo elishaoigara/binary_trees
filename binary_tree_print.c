@@ -1,10 +1,12 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include "binary_tree_s.h"
+#include "binary_trees.h"
 
-/* Function to print the tree */
+/**
+ * binary_tree_print - Prints a binary tree.
+ * @tree: Pointer to the root node of the tree to print.
+ */
 void binary_tree_print(const avl_t *tree)
 {
-    /* Printing logic here (for illustration) */
+    (void)tree;  /* Suppress unused parameter warning */
+    /* Add the actual print logic here if necessary */
 }
 

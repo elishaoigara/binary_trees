@@ -3,18 +3,15 @@
 #include "binary_trees.h"
 
 /**
- * main - Entry point
+ * main - Entry point to test AVL insertion.
  *
- * Return: 0 on success, error code on failure
+ * Return: 0 on success.
  */
 int main(void)
 {
-    avl_t *root;
+    avl_t *root = NULL;
     avl_t *node;
 
-    root = NULL;
-
-    /* Insert nodes and print tree after each insertion */
     node = avl_insert(&root, 98);
     printf("Inserted: %d\n", node->n);
     binary_tree_print(root);
@@ -24,26 +21,6 @@ int main(void)
     binary_tree_print(root);
 
     node = avl_insert(&root, 12);
-    printf("\nInserted: %d\n", node->n);
-    binary_tree_print(root);
-
-    node = avl_insert(&root, 46);
-    printf("\nInserted: %d\n", node->n);
-    binary_tree_print(root);
-
-    node = avl_insert(&root, 128);
-    printf("\nInserted: %d\n", node->n);
-    binary_tree_print(root);
-
-    node = avl_insert(&root, 256);
-    printf("\nInserted: %d\n", node->n);
-    binary_tree_print(root);
-
-    node = avl_insert(&root, 512);
-    printf("\nInserted: %d\n", node->n);
-    binary_tree_print(root);
-
-    node = avl_insert(&root, 50);
     printf("\nInserted: %d\n", node->n);
     binary_tree_print(root);
 
